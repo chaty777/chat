@@ -1,0 +1,387 @@
+@import url("https://fonts.googleapis.com/css?family=Red+Hat+Display:400,500,900&display=swap");
+body,
+html {
+  font-family: Red hat Display, sans-serif;
+  font-weight: 400;
+  line-height: 1.25em;
+  letter-spacing: 0.025em;
+  color: #333;
+  background: #f7f7f7;
+}
+
+.center {
+  display: none;
+  position: absolute;
+  top: 50%;
+  /*left: calc(50% + 12rem);*/
+  left: calc(50% + 2rem);
+  transform: translate(-50%, -50%);
+}
+
+.signin {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  width: 24rem;
+  height: 38rem;
+  z-index: 2;
+  box-sizing: border-box;
+  border-radius: 1rem;
+  background: white;
+  box-shadow: 0 0 8rem 0 rgba(0, 0, 0, 0.1),
+    0rem 2rem 4rem -3rem rgba(0, 0, 0, 0.5);
+}
+.signin h2 {
+  margin: 2rem 0 0 0;
+  font-weight: 500;
+}
+.signin p {
+  margin: 1.5rem 0 0 0;
+  font-weight: 100;
+  color: rgba(0, 0, 0, 0.5);
+}
+.signin .piclist {
+  padding: 1.3rem 1rem;
+  text-align: center;
+}
+.signin input {
+  margin-top: 40%;
+  border: none;
+  background-image: none;
+  background-color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 1.125rem;
+  flex-grow: 2;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1),
+    0rem 1rem 1rem -1rem rgba(0, 0, 0, 0.2);
+  font-family: Red hat Display, sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.025em;
+}
+.signin input:placeholder {
+  color: rgba(0, 0, 0, 0.3);
+}
+.signin button {
+  margin: 10rem 0 0 0;
+  font-weight: 100;
+  width: 5rem;
+  height: 3rem;
+  border-radius: 10%;
+  background-color: black;
+  color: white;
+}
+.ipic {
+  display: inline-flex;
+  width: 5rem;
+  height: 5rem;
+  margin: 1rem;
+  border-radius: 50%;
+  background-size: cover;
+  background-position: center;
+}
+.i1 {
+  background-image: url("https://cdn-ak.f.st-hatena.com/images/fotolife/k/kotobalover/20180319/20180319214459.jpg");
+}
+.i2 {
+  background-image: url("https://news.cdn.nimg.jp/articles/images/4465517/469c81d9a0da9ff76ca70c4f2a8051c44b20d37ff953e759548337d170b32d190ae0a8c9b9009cf3705bcfd038435c3d8804444a0585eb2def18b5c06b0a4d8d");
+}
+.i3 {
+  background-image: url("https://mens-hairstyle.jp/lipps_oomiya/assets_c/2021/04/EA66B973-44FE-4962-BD4F-ADB517AE95C1-thumb-800x1067-30730.jpeg");
+}
+.i4 {
+  background-image: url("https://imgc.eximg.jp/i=https%253A%252F%252Fs.eximg.jp%252Fexnews%252Ffeed%252FSirabee%252FSirabee_20162210917_1.jpg,zoom=600,quality=70,type=jpg");
+}
+.i5 {
+  background-image: url("https://eiga.k-img.com/images/extra/2187/cbaf946e09f1193c/640.jpg?1584424173");
+}
+.i6 {
+  background-image: url("https://korea.kaigai-drama-board.com/assets/medias/posts/3294/20210902-getty_1052538072.jpg");
+}
+.i7 {
+  background-image: url("https://ignewsimg.s3.ap-northeast-1.wasabisys.com/CCUjaTnDwOO");
+}
+.i8 {
+  background-image: url("https://i.pinimg.com/736x/81/19/a6/8119a6a365e994a9b1d3b0b205fbd72c.jpg");
+}
+.i9 {
+  background-image: url("https://kawalog01.com/wp-content/uploads/2021/11/%E3%82%B9%E3%82%AF%E3%83%AA%E3%83%BC%E3%83%B3%E3%82%B7%E3%83%A7%E3%83%83%E3%83%88-2021-11-17-21.33.43.jpg");
+}
+.i10 {
+  background-image: url("https://image.itmedia.co.jp/nl/articles/1511/12/l_rmfig1112-4.jpg");
+}
+/*女子*/
+.i11 {
+  background-image: url("https://img.jj-jj.net/wp-content/uploads/2020/12/19000320/DMA-201025-0115-1024x735.jpg");
+}
+.i12 {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_n7mYd9VddIGDUB5UOJYmcHSLQ44a8Ng13g&usqp=CAU");
+}
+.i13 {
+  background-image: url("https://satorinoblog.com/wp-content/uploads/2020/02/Suzy-Bae.jpg");
+}
+.i14 {
+  background-image: url("https://img.cinematoday.jp/a/rIKiOSWQp42H/_size_640x/_v_1471603830/2.jpg");
+}
+
+.pic {
+  width: 4rem;
+  height: 4rem;
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+}
+
+.contact {
+  position: relative;
+  margin-bottom: 1rem;
+  padding-left: 5rem;
+  height: 4.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.contact .pic {
+  position: absolute;
+  left: 0;
+}
+.contact .name {
+  font-weight: 500;
+  margin-bottom: 0.125rem;
+}
+.contact .message,
+.contact .seen {
+  font-size: 0.9rem;
+  color: #999;
+}
+.contact .badge {
+  box-sizing: border-box;
+  position: absolute;
+  width: 1.5rem;
+  height: 1.5rem;
+  text-align: center;
+  font-size: 0.9rem;
+  padding-top: 0.125rem;
+  border-radius: 1rem;
+  top: 0;
+  left: 2.5rem;
+  background: #333;
+  color: white;
+}
+
+.contacts {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-6rem, -50%);
+  width: 24rem;
+  height: 32rem;
+  padding: 1rem 2rem 1rem 1rem;
+  box-sizing: border-box;
+  border-radius: 1rem 0 0 1rem;
+  cursor: pointer;
+  background: white;
+  box-shadow: 0 0 8rem 0 rgba(0, 0, 0, 0.1),
+    2rem 2rem 4rem -3rem rgba(0, 0, 0, 0.5);
+  transition: transform 500ms;
+  overflow-y: visible;
+  overflow: hidden;
+}
+.contacts h2 {
+  margin: 0.5rem 0 1.5rem 5rem;
+}
+.contacts h3 {
+  margin: 0.5rem 0 1.5rem 7rem;
+  transition: 500ms;
+}
+.contacts:hover h3 {
+  margin: 0.5rem 0 1.5rem 0rem;
+}
+.contacts .fa-bars {
+  position: absolute;
+  left: 2.25rem;
+  color: #999;
+  transition: color 200ms;
+}
+.contacts .fa-bars:hover {
+  color: #666;
+}
+.contacts .contact:last-child {
+  margin: 0;
+}
+.contacts:hover {
+  transform: translate(-5rem, -50%);
+  z-index: 100;
+  overflow-y: scroll;
+}
+
+.chat {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 24rem;
+  height: 38rem;
+  z-index: 2;
+  box-sizing: border-box;
+  border-radius: 1rem;
+  background: white;
+  box-shadow: 0 0 8rem 0 rgba(0, 0, 0, 0.1),
+    0rem 2rem 4rem -3rem rgba(0, 0, 0, 0.5);
+}
+.chat .contact.bar {
+  flex-basis: 3.5rem;
+  flex-shrink: 0;
+  margin: 1rem;
+  box-sizing: border-box;
+}
+.chat .messages {
+  padding: 1rem;
+  background: #f7f7f7;
+  flex-shrink: 2;
+  overflow-y: auto;
+  box-shadow: inset 0 2rem 2rem -2rem rgba(0, 0, 0, 0.05),
+    inset 0 -2rem 2rem -2rem rgba(0, 0, 0, 0.05);
+}
+.chat .messages .time {
+  font-size: 0.8rem;
+  background: #eee;
+  padding: 0.25rem 1rem;
+  border-radius: 2rem;
+  color: #999;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+}
+.chat .messages .message {
+  box-sizing: border-box;
+  padding: 0.5rem 1rem;
+  margin: 1rem;
+  background: #fff;
+  border-radius: 1.125rem 1.125rem 1.125rem 0;
+  min-height: 2.25rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  max-width: 66%;
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.075),
+    0rem 1rem 1rem -1rem rgba(0, 0, 0, 0.1);
+}
+.chat .messages .message.parker {
+  margin: 1rem 1rem 1rem auto;
+  border-radius: 1.125rem 1.125rem 0 1.125rem;
+  background: #333;
+  color: white;
+}
+.chat .messages .message .typing {
+  display: inline-block;
+  width: 0.8rem;
+  height: 0.8rem;
+  margin-right: 0rem;
+  box-sizing: border-box;
+  background: #ccc;
+  border-radius: 50%;
+}
+.chat .messages .message .typing.typing-1 {
+  -webkit-animation: typing 3s infinite;
+  animation: typing 3s infinite;
+}
+.chat .messages .message .typing.typing-2 {
+  -webkit-animation: typing 3s 250ms infinite;
+  animation: typing 3s 250ms infinite;
+}
+.chat .messages .message .typing.typing-3 {
+  -webkit-animation: typing 3s 500ms infinite;
+  animation: typing 3s 500ms infinite;
+}
+.chat .input {
+  box-sizing: border-box;
+  flex-basis: 4rem;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  padding: 0 0.5rem 0 1.5rem;
+}
+.chat .input i {
+  font-size: 1.5rem;
+  margin-right: 1rem;
+  color: #666;
+  cursor: pointer;
+  transition: color 200ms;
+}
+.chat .input i:hover {
+  color: #333;
+}
+.chat .input input {
+  border: none;
+  background-image: none;
+  background-color: white;
+  padding: 0.5rem 1rem;
+  margin-right: 1rem;
+  border-radius: 1.125rem;
+  flex-grow: 2;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1),
+    0rem 1rem 1rem -1rem rgba(0, 0, 0, 0.2);
+  font-family: Red hat Display, sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.025em;
+}
+.chat .input input:placeholder {
+  color: #999;
+}
+
+@-webkit-keyframes typing {
+  0%,
+  75%,
+  100% {
+    transform: translate(0, 0.25rem) scale(0.9);
+    opacity: 0.5;
+  }
+  25% {
+    transform: translate(0, -0.25rem) scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes typing {
+  0%,
+  75%,
+  100% {
+    transform: translate(0, 0.25rem) scale(0.9);
+    opacity: 0.5;
+  }
+  25% {
+    transform: translate(0, -0.25rem) scale(1);
+    opacity: 1;
+  }
+}
+.pic.stark {
+  background-image: url("https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/7/73/SMH_Mentor_6.png");
+}
+
+.pic.banner {
+  background-image: url("https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/4/4f/BruceHulk-Endgame-TravelingCapInPast.jpg");
+}
+
+.pic.thor {
+  background-image: url("https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/9/98/ThorFliesThroughTheAnus.jpg");
+}
+
+.pic.danvers {
+  background-image: url("https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/0/05/HeyPeterParker.png");
+}
+
+.pic.rogers {
+  background-image: url("https://vignette.wikia.nocookie.net/marvelcinematicuniverse/images/7/7c/Cap.America_%28We_Don%27t_Trade_Lives_Vision%29.png");
+}
+.pic.public {
+  background-image: url("https://cdn.dribbble.com/users/3440365/screenshots/16385722/media/7a57028958a6d806f5cec9c22d2d565c.jpg?compress=1&resize=400x300");
+}
+
+.pic.batu1 {
+  background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT7h_AiOOBxv5Oy9dL-5TNmvg60-_xaxQtUgA&usqp=CAU");
+}
+.pic.batu2 {
+  background-image: url("https://thumb.ac-illust.com/43/430ecdfd54a00b54d76ffd93eb318e81_t.jpeg");
+}
